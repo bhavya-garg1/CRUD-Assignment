@@ -13,7 +13,7 @@ Resources:
   GETFUNCTION:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
-      CodeUri: hello-world/
+      CodeUri: handlers/
       Handler: get-func.lambdaHandler
       Runtime: nodejs18.x
       Architectures:
@@ -28,7 +28,7 @@ Resources:
   DELETEFUNCTION:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
-      CodeUri: hello-world/
+      CodeUri: handlers/
       Handler: delete-func.lambdaHandler
       Runtime: nodejs18.x
       Architectures:
@@ -43,7 +43,7 @@ Resources:
   UPDATEFUNCTION:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
-      CodeUri: hello-world/
+      CodeUri: handlers/
       Handler: update-func.updateItemHandler
       Runtime: nodejs18.x
       Architectures:
@@ -58,7 +58,7 @@ Resources:
   CREATEFUNCTION:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
-      CodeUri: hello-world/
+      CodeUri: handlers/
       Handler: create-func.putItemHandler
       Runtime: nodejs18.x
       Architectures:
