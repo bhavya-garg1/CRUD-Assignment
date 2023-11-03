@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "aws-sam",
+            "request": "direct-invoke",
+            "name": "API crud:CRUDFUNCTION",
+            "invokeTarget": {
+                "target": "api",
+                "templatePath": "${workspaceFolder}/crud/template.yaml",
+                "logicalId": "CRUDFUNCTION"
+            },
+            "api": {
+                "path": "/",
+                "httpMethod": "get",
+                "payload": {
+                    "json": {}
+                }
+            }
+        }
+    ]
+}
